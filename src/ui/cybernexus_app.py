@@ -124,7 +124,13 @@ class CyberNexusWindow(QWidget):
         self.worker_thread.start()
     
     def update_output_display(self, text):
-        self.output_display.append(text)
+        # 彩色显示AI Thought和AI Action
+        if text.startswith("[AI Thought]"):
+            self.output_display.append('<span style="color:#2563eb;font-weight:bold;">{}</span>'.format(text))
+        elif text.startswith("[AI Action]"):
+            self.output_display.append('<span style="color:#059669;font-weight:bold;">{}</span>'.format(text))
+        else:
+            self.output_display.append(text)
         self.output_display.ensureCursorVisible()
     
     def pause_worker(self):
