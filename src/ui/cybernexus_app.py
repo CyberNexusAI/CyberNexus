@@ -12,9 +12,12 @@ class CyberNexusWindow(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("CyberNexus · Your AI Automation Assistant")
-        self.setGeometry(300, 300, 540, 640)
+        self.resize(540, 640)
         self.setWindowFlags(self.windowFlags() | Qt.WindowType.WindowStaysOnTopHint)
         self.setWindowOpacity(0.9)
+
+        # 默认显示在屏幕右下角
+        self.move_to_bottom_right()
 
         # Set modern QSS style
         self.setStyleSheet('''
@@ -61,6 +64,14 @@ class CyberNexusWindow(QWidget):
         ''')
         self.init_ui()
         
+    def move_to_bottom_right(self):
+        screen = QApplication.primaryScreen()
+        if screen:
+            screen_geometry = screen.availableGeometry()
+            x = screen_geometry.right() - self.width() - 20
+            y = screen_geometry.bottom() - self.height() - 30
+            self.move(x, y)
+
     def init_ui(self):
         layout = QVBoxLayout()
         layout.setContentsMargins(28, 22, 28, 22)
