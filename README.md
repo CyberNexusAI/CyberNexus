@@ -15,7 +15,7 @@ This project uses large language models (AI) to enable your computer to understa
 ```bash
 pip install -r requirements.txt
 
-export ARK_API_KEY=******************
+export ARK_API_KEY={ Your Volcengien ARK API KEY }
 
 python main.py
 ```
