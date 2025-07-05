@@ -27,7 +27,7 @@ python main.py
   <thead>
     <tr>
       <th width="50%" align="center">Search Pictures</a></th>
-      <th width="50%" align="center">earch Tickets</a></th>
+      <th width="50%" align="center">Search Tickets</a></th>
     </tr>
   </thead>
   <tbody>
