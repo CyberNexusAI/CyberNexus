@@ -21,3 +21,24 @@ python main.py
 ```
 
 <img src="img/intro.jpg" alt="intro" width="350" />
+
+## 案例 / Examples
+<table>
+  <thead>
+    <tr>
+      <th width="50%" align="center">Search Pictures</a></th>
+      <th width="50%" align="center">earch Tickets</a></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">
+        <video src="https://github.com/user-attachments/assets/84bc6151-c166-458b-b352-98f09a223823" width="50%"></video>
+      </td>
+      <td align="center">
+        <video src="https://github.com/user-attachments/assets/8c5eac14-8654-4503-b25f-b1dc77f58906" width="50%"></video>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
