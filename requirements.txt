@@ -1,0 +1,4 @@
+PyQt6
+volcengine-python-sdk[Ark]
+urllib3==1.26.5
+pyautogui
