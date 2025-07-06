@@ -44,6 +44,7 @@ class ComputerControl:
             # pyautogui.click()
 
         elif action_type == 'type':
+            print(f"Typing content: {action['content']}")
             pyautogui.write(action['content'], interval=0.1)
             time.sleep(0.2)
 

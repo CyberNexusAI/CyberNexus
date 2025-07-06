@@ -16,7 +16,7 @@ The available actions in the action space are as follows:
 - left_double(start_box='[x1, y1, x2, y2]')
 - right_single(start_box='[x1, y1, x2, y2]')
 - drag(start_box='[x1, y1, x2, y2]', end_box='[x3, y3, x4, y4]')
-- hotkey(key='')
+- hotkey(key='') # Split keys with a space and use lowercase. Also, do not use more than 3 keys in one hotkey action.
 - type(content='') #If you want to submit your input, use "\n" at the end of `content`.
 - scroll(start_box='[x1, y1, x2, y2]', direction='down or up or right or left')
 - wait() #Sleep for 5s and take a screenshot to check for any changes.
@@ -40,6 +40,12 @@ Action: wait()
 Thought: To view dog pictures, I need to switch to the image search results. The (Images) tab is located below the search bar, among other category tabs. Clicking on this tab will display only image results for "dog pictures," which is necessary for selecting a picture to save locally.
 
 Action: click(start_box='<bbox>151 208 151 208</bbox>')
+```
+
+```
+Thought: To play the game, I need to use arrowleft key to control the character's movement. The left arrow key will move the character to the left, while the right arrow key will move it to the right. This is essential for navigating through the game environment.
+
+Action: hotkey(key='left')
 ```
 
 ## User Instruction
