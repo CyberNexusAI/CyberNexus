@@ -62,6 +62,11 @@ class ComputerControl:
 
         elif action_type == 'wait':
             time.sleep(2)
+        
+        elif action_type == 'left_double':
+            x, y = self.map_from_ai_space(action["start_box"][0], action["start_box"][1])
+            pyautogui.doubleClick(x, y)
+            time.sleep(0.2)
 
         elif action_type == 'right_single':
             x, y = self.map_from_ai_space(action["start_box"][0], action["start_box"][1])
